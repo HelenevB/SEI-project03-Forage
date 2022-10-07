@@ -652,3 +652,9 @@ footer.page-footer {
     position: absolute;
     left: 5px;
 }
+
+.homepage{
+    background-image:url('/media/Screenshot 2022-10-07 at 09.38.16.png');
+    background-blend-mode: multiply;
+    background-color: rgb(158, 154, 154);
+}
