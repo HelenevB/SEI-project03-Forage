@@ -1,7 +1,7 @@
 ## Project 3: Forage
 ---
 ## **Contents**
----
+
 *	[Overview](#overview)
 *	[The Brief & Timeframe](#the-brief--timeframe) 
 *	[Technologies used](#technologies-used) 
