@@ -36,7 +36,7 @@ You will find the deployed application via Heroku [here](https://namesei66.herok
 
 To explore the full features Forage has to offer; please feel free to log in using the following credentials: 
 
-**Username**: demouser1
+**Username**: demouser1<br>
 **Password**: testpassword 
 
 Please note that there is an issue with image upload where Heroku’s file storage deletes any newly uploaded images after less than 24 hours. Therefore, many image links are broken where uploaded files have been removed. Any freshly uploaded images will not render correctly after 24 hours. 
@@ -44,13 +44,15 @@ Please note that there is an issue with image upload where Heroku’s file stora
 ### **The Brief & Timeframe**
 ---
 
-* Python
-* Django Framework
-* CSS
-* JavaScript/JQuery
-* PostgreSQL
-* Heroku (for Deployment)
-* Development Tools – Trello, Zoom, Slack, Git, GitHub
+* Build an application using Python and Django Framework 
+* Utilising PostgreSQL for database storage
+* Create the application using two related models, one of which should be the user
+* Include all significant CRUD functions for at least one model 
+* Add authentication and authorisation to restrict access to appropriate users
+* Give feedback to the user after each action and after form submission
+* Deploy the application online so that it is publicly accessible
+* Timeframe:  7 Days 
+
 
 ### **Technologies Used**
 ---
