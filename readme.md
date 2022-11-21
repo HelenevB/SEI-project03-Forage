@@ -1,5 +1,5 @@
 ## Project 3: Forage
----
+
 ## **Contents**
 
 *	[Overview](#overview)
