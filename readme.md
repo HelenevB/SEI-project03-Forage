@@ -95,7 +95,7 @@ Any boards the users created will be displayed on their profile:
 
 **Functionality**:
 
-*	Sign-up and log in, log-out 
+*	Sign-up, log-in and log-out 
 *	View, update,edit and delete your profile 
 *	Create, update, edit, and delete your board 
 *	Add a new image or image available on the site to your board 
@@ -136,11 +136,11 @@ I started the build process by creating the board model; I then used Django’s 
 
 **Adding another user’s image and removing images from the board** 
 
-Since we had covered associations and de-associations in our class code-along sessions, I could tackle adding and removing images already on Forage to a board comfortably. 
+Since we had covered association and de-association in our class code-along sessions, I could tackle adding and removing images already on Forage to a board comfortably. 
 
 The critical aspect of this was ensuring only un-associated images (those not already displayed on the board) were listed for the user to select. I needed to query this from the board detail’s view function and add them to the context being passed to the template.
 
-By using the exclude method, I returned a query set that did not match the lookup parameters. If the “image _id “were found in  ‘board.images”, those images would not be displayed as an option to add. 
+By using the exclude method, I returned a query set that did not match the lookup parameters. If the “image _id“ were found in "board.images”, those images would not be displayed as an option to add. 
 
 <img src="media/readMe/boarddetail.png" width="100%">
 
@@ -174,7 +174,7 @@ The simple but effective solution that I was able to get a grasp on is noted bel
 
 Whilst I was proud that I could accomplish this, I will need to continue practising to consolidate my understanding fully. 
 
-In addition to the layout of the images on the board, for a cleaner finish, I needed to ensure that all the other elements would only display upon the user's request. I used jQuery to assign and attribute classes to ensure that the additional image element would only show “on click”.  Likewise, I did not want the associate and un-associate image functionality to be permanently showing under every individual image, so I used the hover selector component to make sure the options would only show if the user were hovering over that image:
+In addition to the layout of the images on the board, for a cleaner finish, I needed to ensure that all the other elements would only display upon the user's request. I used jQuery to assign and attribute classes to ensure that the additional image element would only show “on click”.  Likewise, I did not want the associate and un-associate image functionality to be permanently showing under every individual image, so I used the hover selector component to ensure the options would only show if the user were hovering over that image.
 
 Finally, I looked to keep the form styles consistent across the application, so I applied the same CSS classes my classmate had used on their forms to ensure they displayed the same.
 
@@ -187,7 +187,7 @@ Django and PostgreSQL were challenging; I found the framework and database less 
 ### **Known Bugs**
 ---
 
-* Links to other users’ profiles redirect you back to your profile. (No way of seeing other users’ boards)  
+* Links to other users’ profiles redirect you back to your profile, so their currently no way of acessing other users` boards. 
 * The board index page renders when a board is deleted 
 * Heroku file storage means images will only display on the application for a limited time
 * Dark mode clears on refreshing the page 
