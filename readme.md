@@ -120,7 +120,7 @@ We identified:
 2. Images would have a many-to-many relationship with boards
 3. The user would have a one-to-one relationship with the profile 
 
-We discussed the flow of the site, and Ivan drew up the wireframes using the app procreate:
+We discussed the flow of the site, and Ivan drew up the wireframes using the app Procreate:
 
 <img src="media/readMe/wireframe.png" width="100%">
 
@@ -132,7 +132,7 @@ We then used Trello to document our progress:
 
 I was excited to work on “boards” as it was a chance to challenge myself both from a functionality and CSS perspective. 
 
-I started the build process by creating the board model; I then used Django’s class-based views to create, update, and delete an instance of the board model.  Using CBV allowed me to avoid repetition, making the build relatively quick. I was then able to  focus on the main task, which was making sure the board functionality worked smoothly:
+I started the build process by creating the board model; I then used Django’s class-based views to create, update, and delete an instance of the board model. Using CBV allowed me to avoid repetition, making the build relatively quick. I was then able to  focus on the main task, which was making sure the board functionality worked smoothly:
 
 **Adding another user’s image and removing images from the board** 
 
@@ -156,7 +156,7 @@ stored.
 However, I still needed to ensure that the image would display instantly on the page without refreshing; since I was familiar with the association functionality, I drew upon my learning to adapt the code to make it work for images uploaded directly to the board.  
 To do this, I had to create a second method, “add_image_board”, which would be returned by the “add image” method and executed as it returned, taking the “board.id” and the “new_image.id” as its parameters.
 
-The add_image_board method obtains the board by its current ID, and I used the related managers ‘add’ method to associate the image with the board.  Once the association has been made, it redirects the user to the board details page, which will render the recently added image.
+The add_image_board method obtains the board by its current ID, and I used the related managers ‘add’ method to associate the image with the board.Once the association has been made, it redirects the user to the board details page, which will render the recently added image.
 
 <img src="media/readMe/addimageboard.png" width="100%">
 
@@ -164,17 +164,17 @@ The user now had a board with all desired functionalities. Now it was time to st
 
 **Styling / Layout** 
 
-We were keen to adopt the masonry layout that Pinterest is infamous for, so I knew this would require some attention as whilst I love the design aspect of web development, I am still trying to wrap my head around CSS.   To achieve the desired result, I had to do some additional research to help me understand the approach I needed to take. 
+We were keen to adopt the masonry layout that Pinterest is infamous for, so I knew this would require some attention as whilst I love the design aspect of web development, I am still trying to wrap my head around CSS.To achieve the desired result, I had to do some additional research to help me understand the approach I needed to take. 
 
 The simple but effective solution that I was able to get a grasp on is noted below: 
  
 <img src="media/readMe/boardcss.png" width="100%">
 
- The “board-container” is equivalent to the whole board area. It’s split into six columns, holding each added image. I set the “board-section and the “board-images” to width 100%, so they take up the entire space of the column. Padding is applied to all elements to allow for extra spacing. 
+ The “board-container” is equivalent to the whole board area. It’s split into six columns, holding each added image. I set the “board-section" and the “board-images” to width 100%, so they take up the entire space of the column. Padding is applied to all elements to allow for extra spacing. 
 
 Whilst I was proud that I could accomplish this, I will need to continue practising to consolidate my understanding fully. 
 
-In addition to the layout of the images on the board, for a cleaner finish, I needed to ensure that all the other elements would only display upon the user's request. I used jQuery to assign and attribute classes to ensure that the additional image element would only show “on click”.  Likewise, I did not want the associate and un-associate image functionality to be permanently showing under every individual image, so I used the hover selector component to ensure the options would only show if the user were hovering over that image.
+In addition to the layout of the images on the board, for a cleaner finish, I needed to ensure that all the other elements would only display upon the user's request. I used jQuery to assign and attribute classes to ensure that the additional image element would only show “on click”.Likewise, I did not want the associate and un-associate image functionality to be permanently showing under every individual image, so I used the hover selector component to ensure the options would only show if the user were hovering over that image.
 
 Finally, I looked to keep the form styles consistent across the application, so I applied the same CSS classes my classmate had used on their forms to ensure they displayed the same.
 
@@ -203,4 +203,4 @@ Django and PostgreSQL were challenging; I found the framework and database less 
 ---
 The course to date has focused on JavaScript, so this project allowed me to explore Python fundamentals. Whilst this was a new language, having one already under my belt made it easier for me to grasp the concept of Python relatively quickly. This gave me the confidence I needed to continue my coding journey. 
 
-Secondly, I  enjoyed this project as we worked within a realistic timeframe.  We focused on getting the MVP application ready for the deadline and, as a result, presented an application that hit the required elements of the brief. It highlighted the importance of working through a structured process and the value of prioritising. 
+Secondly, I enjoyed this project as we worked within a realistic timeframe. We focused on getting the MVP application ready for the deadline and, as a result, presented an application that hit the required elements of the brief. It highlighted the importance of working through a structured process and the value of prioritising. 
